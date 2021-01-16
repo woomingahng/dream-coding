@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro';
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  background-color: cadetblue;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+}
+
+.logo i {
+  font-size: 24px;
+  color: coral;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li {
+  padding: 8px 12px;
+}
+
+.menu li:hover {
+  background-color: coral;
+  border-radius: 4px;
+}
+
+.sns {
+  display: flex;
+  list-style: none;
+  color: white;
+}
+
+.sns li {
+  padding: 8px 12px;
+}
+
+.hamburger {
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: coral;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sns {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu.active,
+  .sns.active {
+    display: flex;
+  }
+}

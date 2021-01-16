@@ -1,0 +1,50 @@
+body {
+  font-family: 'Josefin Sans';
+  margin: 0;
+}
+
+.maintitle {
+  color: darkgoldenrod;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0 1em 0;
+}
+
+.contentbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.box {
+  border-color: darkgoldenrod;
+  border-style: solid;
+  border-width: 1px;
+  width: 49vw;
+}
+
+.box .title {
+  background-color: darkgoldenrod;
+  padding: 1em 0.5rem;
+  font-size: 2rem;
+}
+
+.box .content {
+  background-color: beige;
+  padding: 1em 0.5rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .contentbox {
+    flex-flow: column wrap;
+  }
+
+  .box {
+    border-color: darkgoldenrod;
+    border-style: solid;
+    border-width: 1px;
+    width: 100vw;
+  }
+}

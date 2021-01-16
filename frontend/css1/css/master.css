@@ -1,0 +1,25 @@
+* {
+  color: green;
+}
+
+li {
+  color: blue;
+}
+
+#special {
+  color: pink;
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid red;
+  background-color: yellow;
+}
+
+button:hover {
+  color: red;
+  background-color: beige;
+}
